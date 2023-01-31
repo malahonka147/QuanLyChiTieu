@@ -14,7 +14,6 @@
     "9df9ef",
     "ffa8B6",
     "a0d2eb",
-    "e5eaf5",
     "d0bdf4",
     "8458B3",
     "ff1d58",
@@ -29,7 +28,7 @@
  ?>
                 <a href="#">
                     <li class="float-item">
-                        <div class="content" style="background: linear-gradient(to bottom right,#<?php echo bgcolor() ?>,#<?php echo bgcolor()?> );">
+                        <div class="content" style="background: linear-gradient(to bottom right,#<?php echo bgcolor() ?>,#e5eaf5);">
                             <table>
                                 <tr>
                                     <td><img class="anh" src="HinhAnh/Img/vt.jpg"></td>
