@@ -1,12 +1,15 @@
+
 <?php include_once("TemplateAdminTren.php");?>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
 
-<div style="text-align: center">
-    <form action="" method="post">
-        <input class="search" type="text" autocomplete="off"  placeholder="Tìm kiếm theo họ tên..." name="timkiem" id="timkiem" value="<?php if(!empty($_REQUEST["timkiem"])){echo $_REQUEST["timkiem"];}?>"/>
-        <input type="submit" value="" style="margin: 20px 0px;position: absolute;width: 30px; height: 30px; background-image: url(HinhAnh/search.png); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 5px; "></input>
-    </form>
-</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
 <ul class="containeritem float">
  <?php
  function bgcolor(){ 
@@ -57,5 +60,35 @@
                 }
                 ?>
 </ul>
-       
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 <?php include_once("TemplateAdminDuoi.php");?>
