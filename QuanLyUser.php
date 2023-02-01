@@ -25,7 +25,7 @@
                     {
                         $sql="select count(*) as total FROM user";
                     }else{
-                        $sql=" select count(*) as total FROM user AND TenKH LIKE N'%".$_REQUEST["timkiem"]."%' ";
+                        $sql=" select count(*) as total FROM user where HoTen LIKE N'%".$_REQUEST["timkiem"]."%' ";
                     }
                     $query=DataProvider::ExecuteQuery($sql);
                     $data = mysqli_fetch_array($query);
@@ -65,7 +65,7 @@
                         {
                             $sql=" select * FROM user order by ID asc LIMIT $start , $limit";
                         }else{
-                            $sql=" select * FROM user and HoTen like N'%".$_REQUEST["timkiem"]."%' order by ID asc LIMIT $start , $limit";
+                            $sql=" select * FROM user where HoTen like N'%".$_REQUEST["timkiem"]."%' order by ID asc LIMIT $start , $limit";
                         }
                         
                         
