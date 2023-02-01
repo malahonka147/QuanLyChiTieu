@@ -5,7 +5,7 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="style.css" rel="stylesheet" />
-        <title>Shoe Garden - Nhanh chóng,Tiện lợi</title>
+        <title>Travel Manager</title>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
