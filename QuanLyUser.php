@@ -23,7 +23,7 @@
                     
                     if(empty($_REQUEST["timkiem"]))
                     {
-                        $sql="select count(*) as total FROM user";
+                        $sql="select count(*) as total FROM user   ";
                     }else{
                         $sql=" select count(*) as total FROM user where HoTen LIKE N'%".$_REQUEST["timkiem"]."%' ";
                     }
