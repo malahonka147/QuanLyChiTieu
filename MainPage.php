@@ -66,9 +66,9 @@
             <li class="float-item">
                 <div class="content" style="background: linear-gradient(to bottom right,#<?php echo bgcolor() ?>,#e5eaf5);">
                     <img class="anh" src="HinhAnh/Img/vt.jpg">
-                    <p><b>Vũng Tàu</b></p>
-                    <p>27-08-2022</p>
-                    <p>4.475.000 VND</p>
+                    <p class="TenDiaDiem"><b>Vũng Tàu</b></p>
+                    <p class="NgayTao">27-08-2022</p>
+                    <p class="TongTien">4.475.000 VND</p>
                 </div>
             </li>
         </a>
