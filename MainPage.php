@@ -3,7 +3,7 @@
 <div style="text-align: center">
     <form action="" method="post">
         <div style=" margin-right: 30px; ">
-            <input class="search" type="text" autocomplete="off" placeholder="Tìm kiếm theo họ tên..." name="timkiem" id="timkiem" value="<?php if (!empty($_REQUEST["timkiem"])) {echo $_REQUEST["timkiem"];} ?>" />
+            <input class="search" type="text" autocomplete="off" placeholder="Tìm kiếm theo tên..." name="timkiem" id="timkiem" value="<?php if (!empty($_REQUEST["timkiem"])) {echo $_REQUEST["timkiem"];} ?>" />
             <input type="submit" class="iconSearch" value="" ></input>
         </div>
 
