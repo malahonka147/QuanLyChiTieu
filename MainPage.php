@@ -11,7 +11,7 @@
 </div>
 <div style=" width: fit-content; margin: 10px auto; ">
     <a href="#" id="myBtn"  class="btnThem"  >Thêm mới</a>
-    <a href="#"  class="btnThem"  >Quản lý người dùng</a>
+    <a href="QuanLyUser.php"  class="btnThem"  >Quản lý người dùng</a>
 </div>
 <div style="border: 1px solid; width: 95%; margin: auto; border-radius: 5px ;box-shadow: 0 1px 1px 0 rgb(165 165 165), 0 1px 1px 0 rgb(0 0 0);"></div>
 <!-- The Modal -->
@@ -108,10 +108,11 @@
         <a href="#">
             <li class="float-item">
                 <div class="content" style="background: linear-gradient(to bottom right,#<?php echo bgcolor() ?>,#e5eaf5);">
-                    <img class="anh" src="HinhAnh/Img/vt.jpg">
-                    <p class="TenDiaDiem"><b><?php echo $data["TenDiaDiem"];?></b></p>
-                    <p class="NgayTao"><?php echo $date->format('d/m/Y');?></p>
-                    <p class="TongTien"><?php echo $data["TongTien"];?> VND</p>
+                    <img class="anh" src="HinhAnh/Img/<?php echo $data["HinhAnh"]; ?>">
+                    <p class="TenDiaDiem"><b>Đ.Điểm:</b> <?php echo $data["TenDiaDiem"];?></p>
+                    <p class="NgayTao"><b>Ngày: </b><?php echo $date->format('d/m/Y');?></p>
+                    <p class="TongTien"><b>T.Tiền: </b><?php echo $data["TongTien"];?> VND</p>
+                    <p class="GhiChu"><b>Note: </b><?php echo $data["GhiChu"];?></p>
                 </div>
             </li>
         </a>
@@ -123,39 +124,6 @@
 
 <?php include_once("TemplateAdminDuoi.php"); ?>
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  document.getElementById("tendiadiem").value ="";
-  document.getElementById("ghichu").value ="";
-  document.getElementById("fileupload").value ="";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.getElementById("tendiadiem").value ="";
-    document.getElementById("ghichu").value ="";
-    document.getElementById("fileupload").value ="";
-  }
-}
-</script>
 <script>
     function validateForm() {
     if (document.getElementById('tendiadiem').value == "") {
